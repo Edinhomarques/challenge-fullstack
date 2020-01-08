@@ -1,6 +1,6 @@
 div#card {
     width: 250px;
-    height: 250px;
+    height: 280px;
     position: relative;
     display: flex;
     top: 100px;
@@ -13,15 +13,23 @@ form {
     border-radius: 20px;
     
 }
-input {
+input.data {
     margin-top: 20px;
     margin-left: 25px;
     width: 200px;
 }
+input.geo {
+    margin-top: 20px;
+    margin-left: -20px;
+    width: 80px;
+}
+input#long{
+    margin-right: 40px;
+}
 button.btnSearch {
     position: relative;
     left: 175px;
-    top: -20px;
+    top: -40px;
     text-decoration: underline;
     background: none;
     border: none;
