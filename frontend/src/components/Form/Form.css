@@ -1,6 +1,6 @@
 div#card {
     width: 250px;
-    height: 300px;
+    height: 250px;
     position: relative;
     display: flex;
     top: 100px;
@@ -14,8 +14,24 @@ form {
     
 }
 input {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     margin-left: 25px;
     width: 200px;
+}
+button.btnSearch {
+    position: relative;
+    left: 175px;
+    top: -20px;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    color: grey;
+}
+button.btn {
+    border: 1px solid grey;
+    color: white;
+    width: 200px;
+    margin-left: 25px;
+    margin-left: 25px;
+    height: 30px;
 }

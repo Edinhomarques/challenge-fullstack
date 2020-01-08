@@ -12,7 +12,10 @@ export default function Form() {
                 </label>
                 <label htmlFor="Address">
                     <input type="text" name="address" id="weight" placeholder="Endereço Cliente"/>
+                    <button type="submit" className="btnSearch">Buscar</button>
                 </label>
+                <button type="submit" className="btn" style={{backgroundColor: '#3CBC8D', marginTop: '20px'}}>Cadastrar Cliente</button>
+                <button type="submit" className="btn"  style={{backgroundColor: '#e10000', marginTop: '15px'}}>Resetar Cadastro</button>
             </form>
         </div>
     )
