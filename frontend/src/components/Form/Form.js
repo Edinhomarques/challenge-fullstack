@@ -41,21 +41,11 @@ export default function Form() {
       }
     async function handleSubmit(event){
         event.preventDefault();
-       
+    
          try {
-            /* setAddress({
-                "street": "Rua Alameda B",
-                "numberStreet": 225,
-                "district": "Jardins",
-                "complement": "Cond Regent Garden",
-                "city": "Aracaju",
-                "state": "Sergipe",
-                "country": "Brasil",
-                "geolocation": {
-                    "lat": "-2151.5",
-                    "lg": "+21651.4"
-                } )*/
-             await api.post('/delivery', {name, weight, address})
+             await api.post('/deliveries', { name,
+                weight,
+                address})
           
          } catch (error) {
              console.error(`Erro ao salvar delivery -> ${error}`)

@@ -7,9 +7,14 @@ module.exports = {
 
     },
     async createDeliveries(req, res) {
-        const {name, weight, address} = req.body
-        deliveries = await Deliveries.create({name, weight, address});
-        return res.json(deliveries)
+        try {
+            const {name, weight, address} = req.body
+            deliveries = await Deliveries.create({name, weight, address});
+            return res.json(deliveries)
+        } catch (error) {
+            return res.json(error)
+        }
+       
     },
     async DeleteDeliveries(req, res) {
         const {id} = req.query
