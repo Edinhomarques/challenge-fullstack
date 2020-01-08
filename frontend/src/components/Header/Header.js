@@ -4,7 +4,7 @@ import logo from '../../assets/routeasy-complex.png'
 export default function Header( ){
     return (
         <header>
-           <img id="logo"  src={logo} alt="logo-marca" srcset=""/>
+           <img id="logo"  src={logo} alt="logo-marca"/>
            <span>Challenge</span>
         </header>
     )

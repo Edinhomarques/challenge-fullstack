@@ -1,0 +1,21 @@
+div#card {
+    width: 250px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    top: 100px;
+    left: 50px;
+    background: #d3d3d3;
+    border-radius: 20px;
+}
+form {
+    border: 1px solid grey;
+    border-radius: 20px;
+    
+}
+input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    width: 200px;
+}

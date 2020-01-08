@@ -6,14 +6,7 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <main>
-        <section>
-              <Form></Form>
-        </section>
-        <section>
-              okk
-        </section>
-      </main>
+      <Form/>
     </div>
   );
 }
