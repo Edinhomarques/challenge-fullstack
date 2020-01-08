@@ -1,0 +1,19 @@
+{
+  "name": "challenge",
+  "version": "1.0",
+  "description": "challenge fullstack of routeasy",
+  "main": "server.js",
+  "repository": "https://github.com/Edinhomarques/challenge-fullstack.git",
+  "author": "Edson Marques",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon ./src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
