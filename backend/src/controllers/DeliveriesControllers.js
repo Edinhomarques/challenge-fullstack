@@ -20,5 +20,10 @@ module.exports = {
         const {id} = req.query
        const deliveriesDelete = await Deliveries.findByIdAndDelete(id)
         return res.json(deliveriesDelete)
+    }, 
+
+    async DeleteAllDeliveries(req, res) {
+       const deliveriesAllDelete = await Deliveries.remove();
+        return res.json(deliveriesAllDelete)
     }
 }
