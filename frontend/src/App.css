@@ -5,3 +5,11 @@ body {
 span {
     margin-left: 20px;
 }
+#vr {
+    position: relative;
+    border: 0.5px solid gray;
+    height: 500px;
+    width: 0px;
+    left: 500px;
+    top: -250px;
+}

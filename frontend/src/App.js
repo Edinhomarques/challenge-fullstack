@@ -65,6 +65,7 @@ function App() {
     <div className="App">
       <Header/>
       <Form createNewList={loadClient}/>
+      <div id="vr"></div>
       <Map/>
       <Table totalClient={totalPedidos.totalClient} totalWeight={parseFloat(totalPedidos.totalWeight).toFixed(2)} averageticket={parseFloat(totalPedidos.averageticket).toFixed(2)}>
        {deliveries.map((deliveries, index) => {

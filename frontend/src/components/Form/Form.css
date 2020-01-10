@@ -3,8 +3,8 @@ div#card {
     height: 280px;
     position: relative;
     display: flex;
-    top: 100px;
-    left: 50px;
+    top: 40px;
+    left: 200px;
     background-color: #f2f2f2;
     border-radius: 5px;
 }
@@ -13,14 +13,17 @@ form {
     border-radius: 5px;
     
 }
+input {
+    height: 20px;
+}
 input.data {
     margin-top: 20px;
     margin-left: 16px;
     width: 200px;
 }
 input.geo {
-    margin-top: 20px;
-    margin-left: -20px;
+    margin-top: 50px;
+    margin-left: -25px;
     width: 80px;
 }
 input#long{
@@ -29,7 +32,7 @@ input#long{
 button.btnSearch {
     position: relative;
     left: 170px;
-    top: -40px;
+    top: -72px;
     text-decoration: underline;
     background: none;
     border: none;
@@ -39,7 +42,23 @@ button.btn {
     border: 1px solid grey;
     color: white;
     width: 200px;
-    margin-left: 25px;
-    margin-left: 25px;
+    margin-left: 20px;
     height: 30px;
+}
+button.btn-reset{
+    border: 1px solid grey;
+    color: white;
+    width: 200px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    height: 30px;
+}
+#resetCard {
+    position: relative;
+    top: 25px;
+    height: 60px;
+    width: 240px;
+    border: 1px solid gray;
+    background-color: #f2f2f2;
+    border-radius: 5px;
 }
