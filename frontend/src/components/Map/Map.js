@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import L from 'leaflet';
 import './Map.css'
 import 'leaflet/dist/leaflet.css';
-export default function Map() {
+export default function Map(props) {
     useEffect(() => {
         // create map
         L.map('map', {
@@ -14,7 +14,9 @@ export default function Map() {
                 '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             }),
           ]
+          
         });
+        
       }, []);
 
   return <div id="map"></div>

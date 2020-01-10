@@ -1,21 +1,21 @@
 div#card {
-    width: 250px;
+    width: 240px;
     height: 280px;
     position: relative;
     display: flex;
     top: 100px;
     left: 50px;
-    background: #d3d3d3;
-    border-radius: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
 }
 form {
     border: 1px solid grey;
-    border-radius: 20px;
+    border-radius: 5px;
     
 }
 input.data {
     margin-top: 20px;
-    margin-left: 25px;
+    margin-left: 16px;
     width: 200px;
 }
 input.geo {
@@ -28,7 +28,7 @@ input#long{
 }
 button.btnSearch {
     position: relative;
-    left: 175px;
+    left: 170px;
     top: -40px;
     text-decoration: underline;
     background: none;

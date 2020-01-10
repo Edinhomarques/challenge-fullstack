@@ -16,6 +16,7 @@ function Table(props){
                         <th>Peso</th>
                         <th>Lat</th>
                         <th>Lng</th>
+                        <th>excluir</th>
                     </tr>
                 </thead>
                

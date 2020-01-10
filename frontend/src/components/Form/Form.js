@@ -2,13 +2,14 @@ import React, {useState} from 'react'
 import axios from 'axios'
 import './Form.css'
 import api from '../../services/api'
-export default function Form() {
+export default function Form(props) {
     const [name, setName] = useState('');
     const [weight, setWeight] = useState('')
     const [address, setAddress] = useState({})
     const [addressString, setAddressString] = useState('')
     const [latitude, setLatitude] = useState('')
     const [longitude, setlongitude] = useState('')
+    
     async function handleClick(event){
         event.preventDefault();
         try {
@@ -44,13 +45,14 @@ export default function Form() {
         event.preventDefault();
     
          try {
-             await api.post('/deliveries', { name, weight, address})
+            await api.post('/deliveries', { name, weight, address})
                 setName('')
                 setWeight('')
                 setAddressString('')
                 setLatitude('')
                 setlongitude('')
-                console.log('--'+address)
+                
+                return  props.createNewList();
          } catch (error) {
              console.error(`Erro ao salvar delivery -> ${error}`)
          } 
@@ -66,6 +68,7 @@ export default function Form() {
              setAddressString('')
              setLatitude('')
              setlongitude('')
+             return props.createNewList()
          } catch (error) {
              console.error(`Erro ao Deletar todos delivery -> ${error}`)
          } 
@@ -74,7 +77,6 @@ export default function Form() {
 
     return (
         <div id="card">
-        
             <form onSubmit={handleSubmit}>
                 <label htmlFor="Name">
                     <input className="data" 
@@ -106,7 +108,7 @@ export default function Form() {
                     <input className="geo" id="long" value={longitude}  type="text" name="long" disabled required placeholder="Longitude"/>
                 </label>
                 <label htmlFor="geo-lat">
-                    <input className="geo" type="text" value={latitude} name="lat" id="weight" disabled required placeholder="Latitude"/>
+                    <input className="geo" type="text" value={latitude} name="lat" id="geo" disabled required placeholder="Latitude"/>
                 </label>
                 <button  className="btn" style={{backgroundColor: '#3CBC8D', marginTop: '20px'}}>Cadastrar Cliente</button>
                 <button  className="btn"  style={{backgroundColor: '#e10000', marginTop: '15px'}} onClick={resetClick}>Resetar Cadastro</button>
