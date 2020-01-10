@@ -1,4 +1,34 @@
-# Challenge para desenvolvedor Full Stack
+# Submissão
+Olá pessoal, tudo bem? Segue a minha solução para a vaga de estágio fullstack, confesso que o desafio foi bem desafiador e fiquei um pouco frustado por não ter feito todo, mas também estou feliz que consegui aprender bastante.
+
+# Como rodar o projeto?
+## Backend
+No diretório backend rodar o comando **yarn** ou **npm install** para instalação de todos os pacotes usados, depois disso basta rodar o comando **yarn dev** ou **npm reun dev** ou npm run dev e pronto, o backend estará rodando na porta 4003.
+
+Rotas usadas:
+
+Rotas | Método 
+------|--------
+'/deliveries'| GET
+'/deliveries'| POST
+'/deliveries/:id'| DELETE
+'/deliveries'| DELETE
+ 
+ ##Frontend
+- No diretório frontend rodar o comando  **yarn** ou **npm install** para instalação de todos os pacotes usados, depois disso basta rodar o comando **yarn start** ou **npm run start** e pronto, o frontend estará rodando na porta 3000.
+Rotas usadas:
+
+## Stack
+
+- [x] MEAN Stack (Create-React-App) [Como ficou acertado usei ReactJS]
+- [x] [Mongoose](http://mongoosejs.com) para modelagem dos dados a serem gravados no banco
+- [x] HTML e CSS (ou algum pré-processador)
+- [x]  [Google Geocode API]
+- [x]  [Leaflet] (incompleto) :(
+
+
+
+## Challenge para desenvolvedor Full Stack
 
 O objetivo deste desafio é avaliarmos o seu domínio em desenvolvimento fullstack, ou seja, sua organização, boas práticas com o código, criação e consumo de APIs Restfull, conhecimento dos frameworks e tecnologias utilizadas.
 
