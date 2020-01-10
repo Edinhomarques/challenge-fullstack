@@ -108,11 +108,11 @@ export default function Form(props) {
                     <input className="geo" id="long" value={longitude}  type="text" name="long" disabled required placeholder="Longitude"/>
                 </label>
                 <label htmlFor="geo-lat">
-                    <input className="geo" type="text" value={latitude} name="lat" id="geo" disabled required placeholder="Latitude"/>
+                    <input className="geo" type="text" value={latitude} name="lat" id="lat" disabled required placeholder="Latitude"/>
                 </label>
-                <button  className="btn" style={{backgroundColor: '#3CBC8D', marginTop: '20px'}}>Cadastrar Cliente</button>
+                <button  className="btn" style={{backgroundColor: '#3CBC8D', marginTop: '20px'}}>CADASTRAR CLIENTE</button>
                 <div id="resetCard">
-                    <button  className="btn-reset"  style={{backgroundColor: '#e10000', marginTop: '15px'}} onClick={resetClick}>Resetar Cadastro</button>
+                    <button  className="btn-reset"  style={{backgroundColor: '#e10000', marginTop: '15px'}} onClick={resetClick}>RESETAR CADASTRO</button>
                 </div>
             </form>
         </div>
